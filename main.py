@@ -14,8 +14,6 @@ from modules.spam_checker import check_spam
 from modules.tenant import check_tenant
 
 
-
-
 CHECKERS = {
     "spam": check_spam,
     "leaks": check_leaks,
@@ -56,14 +54,26 @@ def run_checks(email: str, selected=None):
     generate_html(email, results)
 
 
+def list_checkers(parser):
+    print("Available checkers:")
+    print("\n".join(CHECKERS.keys()))
+    parser.exit()
 
 
 def main():
     parser = argparse.ArgumentParser(description="Email Intelligence Checker")
-    parser.add_argument("--email", type=str, required=True, help="Target email address")
+
+    parser.add_argument("--email", type=str, help="Target email address")
     parser.add_argument("--only", nargs="+", help="Run only specific checks (e.g. --only spam duolingo)")
+    parser.add_argument("--list-checkers", action="store_true", help="Show all available checker names and exit")
 
     args = parser.parse_args()
+
+    if args.list_checkers:
+        list_checkers(parser)
+
+    if not args.email:
+        parser.error("--email is required unless using --list-checkers")
 
     run_checks(args.email, args.only)
 
