@@ -9,8 +9,8 @@ Solenn Vovo - OSINT program written in Python3 that searches for information abo
 
 ## Installation
 ```bash
-git clone https://github.com/fenfoe/solenn_vovo.git
-cd solenn_vovo
+git clone https://github.com/fenfoe/SolennVovo.git
+cd SolennVovo
 pip3 install requests holehe PGPy
 ```
 ## Usage 
