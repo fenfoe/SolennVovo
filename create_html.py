@@ -12,7 +12,10 @@ ICON_MAP = {
     "proton": "📧",
     "smtp": "📫",
     "tenant": "🛬",
-    "holehe": "🌏"
+    "holehe": "🌏",
+    "hudsonrock": "🦠",
+    "trello": "📆",
+    "flickr": "🔵🔴"
 }
 
 
@@ -27,7 +30,10 @@ DESCRIPTION_MAP = {
     "proton": "Proton Mail is a Swiss end-to-end encrypted email service launched in 2014.",
     "smtp": "The Simple Mail Transfer Protocol is an Internet standard communication protocol for electronic mail transmission.",
     "tenant": "A Microsoft tenant is a dedicated instance of Microsoft 365 services that stores an organization's data in a specific location, such as Europe or North America. It is created when someone purchases Microsoft products and is used for managing user accounts, applications, and resources within your organization.",
-    "holehe": "Holehe checks if an email is attached to an account on sites like twitter, instagram, imgur and more than 120 others."
+    "holehe": "Holehe checks if an email is attached to an account on sites like twitter, instagram, imgur and more than 120 others.",
+    "trello": "Trello is a web-based, kanban-style, list-making application developed by Atlassian. Created in 2011 by Fog Creek Software, it was spun out to form the basis of a separate company in New York City in 2014 and sold to Atlassian in January 2017.",
+    "flickr": "Flickr is an image and video hosting service, as well as an online community, founded in Canada and headquartered in the United States.",
+    "hudsonrock": "Hudson Rock Limited is an Israeli cybersecurity company headquartered in Tel Aviv specialized in infostealer malware."
 }
 
 
