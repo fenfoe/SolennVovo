@@ -63,7 +63,7 @@ def run_checks(email: str, selected=None, output="terminal"):
 		print(json.dumps(results, indent=4))
 
 	elif output == "json":
-		filename = f"results/{email}_results.json"
+		filename = f"results/{email}.json"
 		with open(filename, "w") as f:
 			json.dump(results, f, indent=4)
 
