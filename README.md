@@ -1,4 +1,4 @@
-# Solenn Vovo
+# SolennVovo
 Solenn Vovo - OSINT program written in Python3 that searches for information about email addresses from different sources
 
 ## Requirements
