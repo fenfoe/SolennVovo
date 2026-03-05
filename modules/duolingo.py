@@ -34,7 +34,19 @@ def check_duolingo(email):
 				user_profile = requests.get(f"https://www.duolingo.com/2017-06-30/users/{user_id}", headers=headers, timeout=10)
 				return user_profile
 		return False
+	except requests.exceptions.Timeout:
+		print("Error: timeout")
+		return False
+
+	except requests.exceptions.ConnectionError:
+		print("Error: Connection error")
+		return False
+
+	except requests.exceptions.HTTPError as e:
+		print(f"Error: http_error: {e}")
+		return False
+
 	except Exception as e:
-		print(e)
+		print(f"Error: {e}")
 		return False
 
